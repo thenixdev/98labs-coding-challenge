@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.link {
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.App {
+  margin-left: 5%;
+}
+.storeLogo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4%;
+  margin-right: 8%;
+  margin-top: 2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.storeName {
+  color: gray;
+  margin-left: .4em;
+}
+
+.products {
+  margin-left: 1.5em;
+}
+
+.paymentMethodbtn {
+  width: 180px;
+  text-transform: capitalize !important;
+}
+
+.paper {
+  padding: 6%;
+}
+
+.required {
+  color: #ff5349;
+}
+
+.termsAndCondition {
+  padding: 2;
+}
+
+.cardInput {
+  height: 35px;
+}
+
+.cvc {
+  margin-top: 12.8%;
+}
+
+.cvvCardInput {
+  height: 35px;
+  width: 90px;
+}
+
+.cvcTooltip {
+  background-color: lightgray;
+  width: 20px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 1%;
+}
+.cvcTooltip:hover {
+  cursor: help;
+}
+.cardValidInput {
+  height: 33px !important;
+}
+
+.termsAndCondition {
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  background-color: rgb(247, 248, 248);
+}
+
+.orderBtn {
+  background-color: #ff5319;
+  color: white;
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  font-size: medium;
+}
+.orderBtn:hover {
+ cursor: pointer;
+}
+
+.terms {
+  border-bottom: .5px dotted gray;
+  color: rgba(48, 45, 45, 0.897);
+}
+.terms:hover {
+  cursor: pointer;
 }
